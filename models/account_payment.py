@@ -136,6 +136,7 @@ class AccountPayment(models.Model):
 
 class AccountPaymentInvoices(models.Model):
     _name = 'account.payment.invoice'
+    _description = 'Pagos de Facturas'
 
     invoice_id = fields.Many2one('account.move', string='Factura')
     payment_id = fields.Many2one('account.payment', string='Pago')
